@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --header2: hsl(14, 45%, 36%);
+    --raspberry: hsl(332, 51%, 32%);
+    --dark: hsl(24, 5%, 18%);
+    --rwhite: hsl(330, 100%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --background: hsl(30, 54%, 90%);
+    --lgrey: hsl(30, 18%, 87%);
+    --brown: hsl(30, 10%, 34%);
+}
+
+/*CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Outfit", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    font-family: "Young Serif", serif;
+}
+
+html {
+    font-size: 10px; /* 1rem = 10px */
+}
+
+/* Recipe Card */
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.recipe-card {
+    width: 55%;
+    background: var(--white);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 10rem;
+}
+
+hr {
+    margin-top: 5rem;
+    border: 0;
+    border-top: 1px solid var(--lgrey);
+}
+
+.omelette-img {
+    width: 100%;
+    margin: auto;
+    border-radius: 16px;
+}
+
+.main-title {
+    font-size: 3.2rem;
+    margin-top: 3rem;
+    font-weight: 400;
+    color: var(--dark);
+}
+.secondary-title {
+    margin-top: 5rem;
+    font-size: 2.6rem;
+    font-weight: 400;
+    color: var(--raspberry);
+}
+
+.intro {
+    color: var(--brown);
+    font-size: 1.7rem;
+    margin-top: 1.7rem;
+}
+
+@media screen and (max-width: 768px) {
+    .recipe-card {
+        width: 100%;
+        margin-top: 0;
+    }
+    .secondary-title {
+        margin-top: 2.5rem;
+    }
+}
+
+/* Preparation Section */
+
+.prep {
+    width: 60%;
+    margin-top: 4.7rem;
+    margin-left: 4rem;
+}
+
+.prep-title {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--raspberry);
+}
+
+.prep-list {
+    margin-top: 1.6rem;
+    margin-left: 4rem;
+    list-style-position: outside;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.prep-list li {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-left: 1em;
+}
+
+@media screen and (max-width: 768px){
+    .prep {
+        width: 100%;
+        margin: auto;
+        margin-top: 4rem;
+    }
+}
+
+/* Ingredients Section*/
+.ingredients {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    list-style-position: outside;
+}
+.ingredients li {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-left: 1em;
+}
+
+/* Instructions Section */
+.instructions {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    list-style-position: outside;
+}
+.instructions li {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-left: 1em;
+}
+
+/* Nutrition Section */
+.nutrition-text {
+    color: var(--brown);
+    font-size: 1.7rem;
+    margin-top: 1.7rem;
+}
+
+table {
+    width: 100%;
+    margin-top: 3rem;
+    border-collapse: collapse;
+}
+
+table tr {
+    border-bottom: 2px solid var(--lgrey);
+}
+
+table tr td {
+    font-size: 1.7rem;
+    color: var(--brown);
+    padding: 1rem;
+}
+td.value {
+    color: var(--raspberry);
+    font-weight: 700;
+}
+
+
